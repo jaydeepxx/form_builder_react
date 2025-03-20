@@ -1,0 +1,11 @@
+.form-description {
+    border: none;
+    outline: none;
+    resize: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s ease-in-out;
+}
+
+.form-description:focus {
+    border-bottom: 2px solid var(--primary-color);
+}
