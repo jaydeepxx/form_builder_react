@@ -1,0 +1,40 @@
+.theme-switcher {
+    position: relative;
+}
+
+.theme-toggle {
+    display: none;
+    gap: 5px;
+    padding: 7px;
+    position: absolute;
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    background-color: white;
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
+    border-bottom: 0.5px solid var(--border-color);
+}
+
+#dark-theme-button {
+    cursor: pointer;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: #9e9e9e;
+}
+
+#purple-theme-button {
+    cursor: pointer;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: var(--purple-primary);
+}
+
+#red-theme-button {
+    cursor: pointer;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: var(--red-primary);
+}

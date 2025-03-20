@@ -1,0 +1,11 @@
+.form-title-input {
+    border: none;
+    transition: border-bottom 0.2s ease-in-out;
+    outline: none;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.form-title-input:focus {
+    border-bottom: 2px solid var(--primary-color);
+}
