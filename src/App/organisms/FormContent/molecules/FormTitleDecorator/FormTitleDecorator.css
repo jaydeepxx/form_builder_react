@@ -1,0 +1,14 @@
+.toolbar {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+
+.toolbar button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #5f6368;
+}

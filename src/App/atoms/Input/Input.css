@@ -1,0 +1,13 @@
+/* src/components/atoms/Input/Input.css */
+.input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--text-color);
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s ease-in-out;
+  }
+  
+  .input:focus {
+    border-bottom: 2px solid var(--primary-color);
+  }

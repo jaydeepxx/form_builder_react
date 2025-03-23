@@ -1,0 +1,82 @@
+/* src/components/atoms/Button/Button.css */
+.button {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Open Sans", Arial, sans-serif;
+    transition: background-color 0.3s;
+  }
+
+.button-default {
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border: 1px solid rgba(128, 128, 128, 0.395);
+  }
+  
+.button-primary {
+    padding: 10px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: .4em;
+  }
+  
+.button-icon {
+    background: transparent;
+    padding: 5px;
+    color: var(--icon-color);
+    border: none;
+  }
+  
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+}
+
+.preview-button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.preview-button:hover, .publish-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.publish-button {
+  padding: 10px 24px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: .4em;
+  border: none;
+  cursor: pointer;
+}
+
+.clear-button {
+  padding: 5px 10px;
+  background-color: white;
+  color: black;
+  border-radius: .4em;
+  border: 1px solid rgba(128, 128, 128, 0.395);
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.add-option-button {
+    padding: 0px;
+    background: none;
+    outline: none;
+    border: none;
+    color: grey;
+    cursor: pointer;
+}

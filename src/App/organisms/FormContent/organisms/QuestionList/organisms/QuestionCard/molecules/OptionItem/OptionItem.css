@@ -1,0 +1,27 @@
+/* src/components/molecules/OptionItem/OptionItem.css */
+.option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .option-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: border-bottom 0.2s ease-in-out;
+    font-size: 15px;
+  }
+  
+  .option-input:hover {
+    border-bottom: 1px solid #8888885d;
+  }
+  
+  .option-input:focus {
+    border-bottom: 2px solid var(--primary-color);
+  }
+  
+  .option-label {
+    font-family: docs-Roboto, "Open Sans";
+  }
