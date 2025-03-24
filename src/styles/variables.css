@@ -1,0 +1,26 @@
+:root {
+    --purple-primary: #673ab7;
+    --purple-secondary: #7047b5;
+    --dark-primary: #202124;
+    --red-primary: #db4437;
+    --text-color: rgb(32, 33, 36);
+    --border-color: rgb(218, 220, 224);
+    --background-color: #f0ebf8;
+    --icon-color: #5f6368;
+  }
+  
+  .purple-theme {
+    --primary-color: var(--purple-primary);
+    --secondary-color: var(--purple-secondary);
+    --background-color: #f0ebf8;
+  }
+  
+  .dark-theme {
+    --primary-color: var(--dark-primary);
+    --background-color: #f9f9f9;
+  }
+  
+  .red-theme {
+    --primary-color: var(--red-primary);
+    --background-color: #fce8e6;
+  }

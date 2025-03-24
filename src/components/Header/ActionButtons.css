@@ -1,0 +1,26 @@
+.publish-button {
+    padding: 10px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: .4em;
+    border: none;
+    cursor: pointer;
+}
+
+.publish-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.clear-button {
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border-radius: .4em;
+    border: 1px solid rgba(128, 128, 128, 0.395);
+    cursor: pointer;
+}
+
+.clear-button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
