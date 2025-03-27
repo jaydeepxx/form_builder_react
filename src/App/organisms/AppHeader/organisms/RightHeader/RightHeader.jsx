@@ -2,47 +2,66 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './RightHeader.css';
 import Button from "../../../../atoms/Button/index.jsx";
-import IconButton from "../../../../molecules/IconButton/index.jsx";
+import UndoRedo from "./molecules/UndoRedo";
 import ThemeSelector from "./molecules/ThemeSelector/ThemeSelector.jsx";
+import clearForm from "./helpers/rightHeader.clearForm.jsx";
 
-const RightHeader = ({isPreviewMode = false}) => {
+const RightHeader = ({
+                         canUndo,
+                         canRedo,
+                         setTheme,
+                         isPreviewMode,
+                         setIsPreviewMode,
+                         setFormData,
+                         setHistory,
+    history,
+                     }) => {
+
+    const handlePreviewToggle = () => {
+        setIsPreviewMode(!isPreviewMode);
+    };
+
+    const handleClearForm = () => {
+        clearForm(setFormData, setHistory);
+    };
+
+    const handlePublish = () => {
+        alert('Form published! (This is a placeholder for actual publishing functionality)');
+    };
+
     return(
         <>
             <ul className="form-header-right">
                 <li>
                     <Button
-                        className="preview-button"
+                        variant="primary"
+                        onClick={handlePreviewToggle}
                     >
                         {isPreviewMode ? 'Edit' : 'Preview'}
                     </Button>
                 </li>
                 <li className="theme-switcher">
-                    <ThemeSelector />
+                    <ThemeSelector setTheme={setTheme} />
                 </li>
-                <li>
-                    <IconButton
-                        icon="undo"
-                        label="Undo"
-                        disabled={true}
-                    />
-                </li>
-                <li>
-                    <IconButton
-                        icon="redo"
-                        label="Redo"
-                        disabled={true}
-                    />
-                </li>
+                {!isPreviewMode && <UndoRedo
+                                        canUndo={canUndo}
+                                        canRedo={canRedo}
+                                        setFormData={setFormData}
+                                        setHistory={setHistory}
+                                        history={history}
+                />}
                 <li>
                     <Button
                         className="clear-button"
+                        onClick={handleClearForm}
                     >
                         Clear form
                     </Button>
                 </li>
                 <li>
                     <Button
-                        className="publish-button"
+                        variant="primary"
+                        onClick={handlePublish}
                     >
                         Publish
                     </Button>
@@ -53,7 +72,14 @@ const RightHeader = ({isPreviewMode = false}) => {
 }
 
 RightHeader.propTypes = {
+    canUndo: PropTypes.bool,
+    canRedo: PropTypes.bool,
+    setTheme: PropTypes.func,
     isPreviewMode: PropTypes.bool,
+    setIsPreviewMode: PropTypes.func,
+    setFormData: PropTypes.func,
+    setHistory: PropTypes.func,
+    history: PropTypes.object,
 }
 
 export default RightHeader;

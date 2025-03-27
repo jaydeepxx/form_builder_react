@@ -13,7 +13,7 @@ const Button = ({
                 }) => {
     return (
         <button
-            className={`${className} button-${variant}`}
+            className={`button-${variant} ${className} `}
             onClick={onClick}
             disabled={disabled}
             type="button"

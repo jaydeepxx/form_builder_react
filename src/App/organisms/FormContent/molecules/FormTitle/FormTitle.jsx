@@ -1,14 +1,19 @@
 import React from 'react';
 import './FormTitle.css';
 import Input from '../../../../atoms/Input/index.jsx';
+import titleChange from "./formTitle.helpers.jsx";
 import PropTypes from "prop-types";
 
-const FormTitle = ({ title = "Untitled Form", isPreviewMode = false }) => {
+const FormTitle = ({ formTitle = "Untitled Form", isPreviewMode = false, setFormData }) => {
+    const handleTitleChange = (e) => {
+        titleChange(e, setFormData);
+    }
     return (
         <Input
-            value={title}
+            value={formTitle}
             placeholder="Form title"
             className="form-title-input label-title"
+            onChange={handleTitleChange}
             disabled={isPreviewMode}
             readOnly={isPreviewMode}
         />
@@ -16,8 +21,9 @@ const FormTitle = ({ title = "Untitled Form", isPreviewMode = false }) => {
 };
 
 FormTitle.propTypes = {
-    title: PropTypes.string,
+    formTitle: PropTypes.string,
     isPreviewMode: PropTypes.bool,
+    setFormData: PropTypes.func,
 }
 
 export default FormTitle;
