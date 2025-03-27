@@ -1,0 +1,23 @@
+/* src/components/molecules/IconButton/IconButton.css */
+.icon-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 5px;
+    color: var(--icon-color);
+  }
+  
+  .icon-button:hover {
+    border-radius: 50%;
+    background-color: rgba(202, 202, 202, 0.267);
+  }
+  
+  .icon-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+.icon {
+    font-size: 24px;
+    color: var(--icon-color);
+}

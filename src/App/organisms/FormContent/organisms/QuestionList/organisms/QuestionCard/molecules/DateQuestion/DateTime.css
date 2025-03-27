@@ -1,0 +1,9 @@
+.input-date,
+.input-time {
+    display: flex;
+    align-items: center;
+    color: #70757a;
+    font-family: docs-Roboto, "Open Sans";
+    border-bottom: 2px solid #70757a55;
+    gap: 5px;
+}

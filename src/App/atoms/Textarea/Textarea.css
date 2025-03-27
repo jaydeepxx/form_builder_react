@@ -1,0 +1,14 @@
+/* src/components/atoms/Textarea/Textarea.css */
+.textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    background: transparent;
+    color: var(--text-color);
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s ease-in-out;
+  }
+  
+  .textarea:focus {
+    border-bottom: 2px solid var(--primary-color);
+  }
