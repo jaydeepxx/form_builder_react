@@ -1,0 +1,7 @@
+/* src/components/molecules/QuestionList.jsx/QuestionList.jsx.css */
+.question-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }

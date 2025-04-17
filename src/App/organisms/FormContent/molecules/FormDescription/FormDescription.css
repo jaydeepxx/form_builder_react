@@ -1,0 +1,15 @@
+/* src/components/molecules/FormDescription/FormDescription.css */
+.form-description {
+    border: none;
+    outline: none;
+    resize: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s ease-in-out;
+    font-size: 14px;
+    line-height: 22px;
+    width: 100%;
+  }
+  
+  .form-description:focus {
+    border-bottom: 2px solid var(--primary-color);
+  }

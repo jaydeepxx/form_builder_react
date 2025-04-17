@@ -1,0 +1,25 @@
+.form-header-left{
+    display: flex;
+    align-items: center;
+}
+
+.form-headline {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    max-width: 50%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s ease-in-out;
+    padding: 5px;
+    color: rgb(32, 33, 36);
+}
+
+.form-headline:focus {
+    border-bottom: 2px solid #202124;
+}
+
+.form-icon {
+    cursor: pointer;
+    max-width: 50px;
+    padding: 10px;
+}

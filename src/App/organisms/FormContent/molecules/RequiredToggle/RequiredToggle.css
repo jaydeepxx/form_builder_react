@@ -1,0 +1,13 @@
+/* src/components/molecules/RequiredToggle/RequiredToggle.css */
+.required-option {
+    display: flex;
+    align-items: center;
+  }
+  
+  .required {
+    padding: 5px;
+    letter-spacing: 0.2px;
+    font-size: 0.9em;
+    margin-right: 2px;
+    font-family: Roboto;
+  }
